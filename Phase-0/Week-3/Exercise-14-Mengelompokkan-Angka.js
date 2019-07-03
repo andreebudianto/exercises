@@ -8,7 +8,7 @@ function mengelompokkanAngka(arr) {
     var arrThird = [];
     var arrResult = [];
     // Lakukan perulangan untuk mengecek angka pada input array
-    length = arr.length;
+    var length = arr.length;
     for (var i = 0; i < length; i++) {
         // Jika data habis dibagi 2 maka masukkan ke array genap
         if ( (arr[i] % 2) === 0 ) {
