@@ -4,7 +4,7 @@
 function tentukanDeretGeometri(arr) {
     var diff = 0;
     var total = 0;
-    length = arr.length;
+    var length = arr.length;
     // Lakukan perulangan untuk mendapatkan total selisih bagi
     for (var i = 0; i < length; i++) {
         if (i !== length-1) {
