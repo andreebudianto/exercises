@@ -1,0 +1,128 @@
+/* Phase 0 Week 2 Exercise 1 */
+/* Pseudocode Challenge */
+
+==============================
+Question 1 - Newton Second Law
+==============================
+Algorithm =
+-----------
+1. Create a new variable named 'mass' and set the value to 600.
+2. Create a new variable named 'acceleration' and set the value to 2.
+3. Create a new variable named 'force' to store the calculation result and set the value to 0.
+4. Read and save the mass value of the car into variable 'mass'.
+5. Read and save the acceleration value that given to the car into variable 'acceleration'.
+6. Calculate the value of 'mass' variable and the value of 'acceleration' variable using the math formula (ΣF = m x a).
+7. Store the calculation result into 'force' variable.
+8. Display the value of 'force' variable.
+
+Pseudocode =
+------------
+CREATE and STORE "mass" with value 600
+CREATE and STORE "acceleration" with value 2
+CREATE and STORE "force" with value 0
+READ and SAVE "mass"
+READ and SAVE "acceleration"
+CALCULATE "mass" times "height"
+SET "force" value with the calculation result
+DISPLAY "force" value
+
+
+==============================
+Question 2 - Leap Year
+==============================
+Algorithm =
+-----------
+1. Create a new variable named 'year' and set the value to any value.
+2. Read and save the input value into variable 'year'.
+3. Check the 'year' value with conditional event "IF" combined with comparison operator "AND" and "OR".
+4. First condition = if the result of 'year' modulus by 4 is 0 and the result of 'year' modulus by 100 is greater than 0.
+5. Second condition = if the result of 'year' modulus by 4 is 0 and the result of 'year' modulus by 100 is 0 and the result of 'year' modulus by 400 is 0.
+6. Make a conditional sentence with operator "IF-THEN-ELSE" including first condition and second condition combined with comparison operator "OR".
+7. If one of the two conditions is fulfilled, display the result that current year is a leap year.
+8. If none of the two conditions is fulfilled, display the result that current year is not a leap year.
+   Example =    IF first condition OR second condition THEN
+                    ......
+                ELSE
+                    ......
+                END IF
+Pseudocode =
+------------
+CREATE and STORE "year" with any value
+READ and SAVE "year"
+IF
+    (year MODULUS BY 4 EQUALS TO 0) AND (year MODULUS BY 100 GREATER THAN 0) ) 
+    OR 
+    (year MODULUS BY 4 EQUALS TO 0) AND (year MODULUS BY 100 EQUALS TO 0) AND (year MODULUS BY 400 EQUALS TO 0) 
+THEN
+    DISPLAY "Current year is a leap year."
+ELSE
+    DISPLAY "Current year is not a leap year."
+END IF
+
+==============================
+Question 3 - Laundry Day
+==============================
+Algorithm =
+-----------
+1. Create a new variable named 'clothes' and set the value to 20.
+2. Create a new variable named 'counter' and set the value to 0.
+3. Create a new variable named 'amount' and set the value to 0.
+4. Read and save the amount of clothes into variable 'clothes'.
+5. Do a looping condition by using operator "WHILE" with condition that 'counter' value is smaller than 'clothes' value.
+6. When the condition is fulfilled :
+   Increase the value of 'amount' variable by 1,
+   Increase the value of 'counter' by 1,
+   Make a conditional sentence with operator "IF" with condition = if the 'amount' value equals with 'clothes' value then turn on the wash machine. 
+
+Pseudocode =
+------------
+CREATE and STORE "clothes" with value 20
+CREATE and STORE "counter" with value 0
+CREATE and STORE "amount" with value 0
+READ and SAVE "clothes"
+WHILE counter SMALLER THAN clothes
+    INCREMENT counter
+    INCREMENT amount
+    IF amount EQUALS TO clothes THEN
+        DO turn on the wash machine
+    END IF
+END WHILE
+
+==============================
+Question 4 - Nail Checker
+==============================
+Algorithm =
+-----------
+1. Create a new variable named 'students' and set the value to 40.
+2. Create a new variable named 'counter' and set the value to 0.
+3. Create a new variable named 'nail' and set the value to false.
+4. Read and save the amount of students into variable 'students'.
+5. Do a looping condition by using operator "WHILE" with condition that 'counter' value is smaller than 'students' value.
+6. When the condition is fulfilled :
+   Make a conditional sentence with operator "IF" to check the student's nail with condition = 
+        If the student's nail is long then set the 'nail' value to true.
+        If the student's nail is not long then set the 'nail' value to false.
+   Make a conditional sentence with operator "IF" with condition = 
+        If the 'nail' value is true then do a punishment.
+        If the 'nail' value is false then do a compliment.
+   Increase the value of 'counter' by 1
+
+Pseudocode =
+------------
+CREATE and STORE "students" with value 40
+CREATE and STORE "counter" with value 0
+CREATE and STORE "nail" with value false
+READ and SAVE "students"
+WHILE counter SMALLER THAN students
+    IF nail is long THEN
+        SET nail to true
+    ELSE
+        SET nail to false
+    END IF
+    IF nail is true THEN
+        DO give a punishment to the student 
+    ELSE
+        DO give a compliment to the student
+    END IF
+    INCREMENT counter
+END WHILE

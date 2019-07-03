@@ -1,0 +1,126 @@
+<!DOCTYPE html
+<html>
+    <head>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora:700&display=swap" rel="stylesheet">
+        <title>Edison's Profile</title>
+    </head>
+    <body>
+        <div id="main-container" class="main-container">
+            <div id="welcome-image" class="welcome-image">
+                <div id="welcome-logo" class="welcome-logo">
+                    <img src="./img/welcome-logo.jpeg" alt="My Logo">
+                    <h1 id="welcome-heading" class="welcome-heading">Welcome to My Profile Page</h1> 
+                    <form action="#about-me">
+                        <input type="submit" id="learn-more" class="learn-more" value="Learn More">
+                    </form>
+                </div>
+            </div>
+            <div id="about-me" class="about-me">
+                <div id="whoami" class="whoami">
+                    <h1>Who Am I</h1>
+                    <p>
+                        I'm a full stack developer candidate who is struggling at Hacktiv8 for polishing my coding skill in order to be a professional full stack developer.
+                    </p>
+                    <form action="./doc/CV.pdf">
+                        <input type="submit" value="Download My CV">
+                    </form>
+                </div>
+                <div id="personal" class="personal">
+                    <h1>Personal Info</h1>
+                    <table id="table-personal" class="table-personal">
+                        <tr>
+                            <th style="width:40%;">Name</th>
+                            <td style="width:10%;">:</td>
+                            <td style="width:50%;">Edison</td>
+                        </tr>
+                        <tr>
+                            <th>Birthday</th>
+                            <td>:</td>
+                            <td>8 September 1989</td>
+                        </tr>
+                        <tr>
+                            <th>Phone</th>
+                            <td>:</td>
+                            <td>(+62) 811-748-9898</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>:</td>
+                            <td>edirates@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Job</th>
+                            <td>:</td>
+                            <td>Full Stack Developer</td>
+                        </tr>
+                    </table>
+                    <div id="social-link" class="social-link">
+                        <a href="http://wa.me/08117489898" target="_blank"><img src="./img/walogo.png"></a>
+                        <a href="https://www.facebook.com/EdisonZhou" target="_blank"><img src="./img/fblogo.png"></a>
+                        <a href="https://www.instagram.com/edirates/?hl=en" target="_blank"><img src="./img/iglogo.png"></a>
+                        <a href="https://plus.google.com/me"><img src="./img/gplogo.png" target="_blank"></a>
+                        <a href="https://www.linkedin.com/in/edison-zhou-512aaa11b/" target="_blank"><img src="./img/lilogo.png"></a>
+                    </div>
+                </div>
+                <div id="expertise" class="expertise">
+                    <h1>My Expertise</h1>
+                    <table id="table-expertise" class="table-expertise">
+                        <tr style="height: 50%;">
+                            <th style="width:10%;"><img src="./img/webdesign.png"></th>
+                            <td style="width:80%;">
+                                <h2>WEB DESIGN</h2>
+                                <p class="p-expertise">Design website using HTML, CSS and Javascript.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><img src="./img/webdev.png"></th>
+                            <td>
+                                <h2>WEB DEVELOP</h2>
+                                <p class="p-expertise">Develop website using React JS and React Native.</p></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="about-me-more" class="about-me">
+                <div id="education" class="education">
+                    <h1>Educations</h1>
+                    <ul>
+                        <li><img src="./img/sd.png" style="width:20px; height:20px;margin:0px 10px 0px 0px;">1995 - 2001 = Elementary School</li>
+                        <li><img src="./img/smp.png" style="width:20px; height:20px;margin:0px 10px 0px 0px;">2001 - 2004 = Junior High School</li>
+                        <li><img src="./img/sma.png" style="width:20px; height:20px;margin:0px 10px 0px 0px;">2004 - 2007 = Senior High School</li>
+                        <li><img src="./img/s1.png" style="width:20px; height:20px;margin:0px 10px 0px 0px;">2007 - 2011 = IT Bachelor Degree</li>
+                    </ul>
+                </div>
+                <div id="experience" class="experience">
+                    <h1>Experiences</h1>
+                    <ul>
+                        <li>
+                            <h2>Server Operator</h2>
+                            <i>(2008-2010)</i>
+                            <p>Maintaining servers in order to run properly.</p>
+                        </li>
+                        <li>
+                            <h2>IT Manager</h2>
+                            <i>(2012-2019)</i>
+                            <p>Managing hardware, software, and networking infrastructure.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="skill" class="skill">
+                    <h1>Skills</h1>
+                    <ul>
+                        <li>
+                            <h2>HTML/CSS</h2><input type="range" class="radio-skill" value="70" disabled>
+                            <h2>Javascript</h2><input type="range" class="radio-skill" value="80" disabled>
+                            <h2>React JS/React Native</h2><input type="range" class="radio-skill" value="65" disabled>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <h5>Copyright &copy; 2019 by Edison Hacktiv8</h5>
+    </footer>
+</html>

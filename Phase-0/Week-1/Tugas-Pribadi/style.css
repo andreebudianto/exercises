@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 1s;
+}
+
+.main-container {
+    
+}
+
+.welcome-image {
+    position: relative;
+    background-image: url("./img/welcome-image.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    /* filter: blur(5px); */
+}
+
+.welcome-logo {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.welcome-logo img {
+    position: absolute;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.welcome-heading {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.learn-more {
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border: 1px solid midnightblue;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: midnightblue;
+}
+.learn-more:hover {
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border: 1px solid firebrick;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: firebrick;
+}
+
+.about-me {
+    display: block;
+    width: 100%;
+}
+.about-me h1 {
+    margin: 10% 10% 0% 10%;
+    font-family: "Lora";
+    text-align: center;
+    color: 3399FF;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px grey;
+}
+.about-me h1:hover {
+    cursor: pointer;
+}
+.about-me p {
+    margin: 10% 10% 0% 10%;
+    font-family: "Lora";
+    text-align: left;
+    color: dimgray;
+}
+
+.whoami {
+    display: inline-block;
+    margin: auto;
+    width: 33.33%;
+    height: 400px;
+    float: left;
+    background-color: lightgrey;
+    box-shadow: 1px 1px 20px grey;
+}
+.whoami input {
+    margin: 10% 30% 0% 25%;
+    font-family: "Lora";
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3399FF;
+    padding: 20px;
+    border: 1px solid #3399FF;
+    border-radius: 30px;
+    background-color: lightgrey;
+}
+.whoami input:hover {
+    margin: 10% 30% 0% 25%;
+    font-family: "Lora";
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: lightgrey;
+    padding: 20px;
+    border: 1px solid #3399FF;
+    border-radius: 30px;
+    background-color: #3399FF;
+}
+
+.personal {
+    display: inline-block;
+    margin: auto;
+    width: 33.33%;
+    height: 400px;
+    float: left;
+    background-color: lightgrey;
+    box-shadow: 1px 1px 20px grey;
+}
+.personal table {
+    margin: 10% 10% 0% 10%;
+    font-family: "Lora";
+    text-align: left;
+    color: dimgray;
+}
+.personal .social-link {
+    margin: 5% 10% 0% 10%;
+    font-family: "Lora";
+    text-align: left;
+    color: dimgray;
+}
+.personal .social-link img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.expertise {
+    display: inline-block;
+    margin: auto;
+    width: 33.33%;
+    height: 400px;
+    float: left;
+    background-color: lightgrey;
+    box-shadow: 1px 1px 20px grey;
+}
+.expertise table {
+    margin: 10% 10% 0% 10%;
+    font-family: "Lora";
+    text-align: left;
+    color: dimgray;
+}
+.expertise h2 {
+    margin: 5% 10% -10% 10%;
+    font-family: "Lora";
+    font-weight: bold;
+}
+.expertise img {
+    margin: 10% 10% 0% 10%;
+    width: 50px;
+    height: 50px;
+}
+
+
+.education {
+    display: inline-block;
+    margin: auto;
+    width: 33.33%;
+    height: 400px;
+    float: left;
+    background-color: lightgrey;
+    box-shadow: 1px 1px 20px grey;
+}
+.education li {
+    margin: 10% 10% 0% 15%;
+    font-family: "Lora";
+    text-align: left;
+    color: dimgray;
+    list-style: none;
+}
+
+.experience {
+    display: inline-block;
+    margin: auto;
+    width: 33.33%;
+    height: 400px;
+    float: left;
+    background-color: lightgrey;
+    box-shadow: 1px 1px 20px grey;
+}
+.experience li {
+    margin: 10% 10% 0% 15%;
+    font-family: "Lora";
+    vertical-align: center;
+    text-align: left;
+    color: dimgray;
+    list-style: none;
+}
+.experience h2 {
+    margin: 10% 0% 0% 0%;
+    font-family: "Lora";
+    text-align: left;
+    color: dimgray;
+}
+.experience p {
+    margin: 0% 0% 0% 0%;
+    font-family: "Lora";
+    text-align: left;
+    color: dimgray;
+}
+
+.skill {
+    display: inline-block;
+    margin: auto;
+    width: 33.33%;
+    height: 400px;
+    float: left;
+    background-color: lightgrey;
+    box-shadow: 1px 1px 20px grey;
+}
+.skill li {
+    margin: 10% 10% 0% 15%;
+    font-family: "Lora";
+    vertical-align: center;
+    text-align: left;
+    color: dimgray;
+    list-style: none;
+}
+.skill h2 {
+    margin: 0% 0% 0% 0%;
+    font-family: "Lora";
+    text-align: left;
+    color: dimgray;
+}
+.skill input.radio-skill {
+    margin: 0% 0% 0% 0%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+footer h5 {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html
+<html>
+    <body>
+        <h1><strong>Sign Up Form</strong></h1>
+        <form id="signupform" name="signupform" action="welcome.html" method="POST">
+            <p>
+                <label for="firstname">First name:<br></label>
+                <input type="text" id="firstname" name="firstname" minlength="3" maxlength="20" pattern="[a-zA-Z]+" required>
+            </p>
+            <p>
+                <label for="lastname">Last name:<br></label>
+                <input type="text" id="lastname" name="lastname" minlength="3" maxlength="20" pattern="[a-zA-Z]+" required>
+            </p>
+            <p>
+                <label for="gender">Gender:<br></label>
+                <input type="radio" id="gender1" name="gender" value="male" checked>Male<br>
+                <input type="radio" id="gender2" name="gender" value="female">Female<br>
+                <input type="radio" id="gender3" name="gender" value="other">Other<br>
+            </p>
+            <p>
+                <label for="nationality">Nationality:<br></label>
+                <select id="nationality" name="nationality" required>
+                    <option value="malaysian">Malaysian</option>
+                    <option value="indonesian">Indonesian</option>
+                    <option value="singaporean">Singaporean</option>
+                </select>
+            </p>
+            <p>
+                <label for="languange">Language Spoken:<br></label>
+                <input type="checkbox" id="checkbox1" name="languange" value="bahasaindonesia">Bahasa Indonesia<br>
+                <input type="checkbox" id="checkbox2" name="languange" value="english">English<br>
+                <input type="checkbox" id="checkbox3" name="languange" value="other">Other<br>
+            </p>
+            <p>
+                <label for="bio">Bio:<br></label>
+                <textarea id="bio" name="bio" rows="10" cols="30">
+                </textarea>
+            </p>
+            <input type="submit" id="signup" name="signup" value="Sign Up">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+           
+            .menu-container {
+                display: inline-block;
+                width: 1oo%;
+                padding: 120px 60px 30px 60px;
+                
+
+            }
+            
+            .menu-sidebar {
+                width: 30%;
+                float: left;        
+            }
+
+            .menu-title-sidebar {
+                color: #fff;
+                background: tomato;
+                padding: 12px;
+                border-radius: 5px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                height: 28px;
+                font-size: 24px;
+                margin: 3px;
+                font-weight: 700;
+            }
+
+            .menu-sidebar a {
+                text-decoration: none;
+            }
+
+            a:hover .menu-item-sidebar{
+                text-decoration: none;
+                color: #fff;
+                background: tomato;
+
+            }
+
+            .menu-item-sidebar {
+                display: inline-block;
+                color: tomato;
+                padding: 12px;
+                border-radius: 5px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                height: 18px;
+                font-size: 18px;
+                margin: 3px;  
+            }
+
+            .menu-card-container {
+                width: 70%;
+                float: left;
+            }
+
+            .menu-card {
+                float: left;
+                width: calc(50% - 60px);
+                margin: 0px 15px 15px 15px;
+                padding: 12px;
+                border-radius: 5px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                height: 18px;
+                font-size: 14px;
+                height:300px;
+                color: tomato;
+            }
+
+            .menu-card-image {
+                width: 100%;
+                height: 200px;
+            }

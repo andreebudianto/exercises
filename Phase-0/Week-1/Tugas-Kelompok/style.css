@@ -1,0 +1,344 @@
+/* ----------------------------------------  Body  ------------------------------------ */
+/* Pertama-tama harus atur margin dan padding tag body menjadi 0 agar tidak ada space yang nampak kosong */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Garamond", serif;
+}
+
+/* ----------------------------------------  Header  ------------------------------------ */
+
+/* Setting posisi header menjadi fixed agar header tetap tampil pada saat di scroll */
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: wheat;
+    box-shadow: 1px 10px 20px #410303;
+    z-index: 10;
+}
+
+/* Setting agar logo berada tengah dibagian header */
+header .logo {
+    position: relative;
+    margin: auto;
+    padding: 5px;
+}
+
+/* Setting agar logo berada di posisi kiri */
+.header-left {
+    display: block;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+/* Setting agar tombol navigasi berada di posisi kanan */
+.header-right {
+    display: block;
+    width: 50%;
+    height: 100%;
+    float: right;
+
+    /* Ada cara lain yang lebih mudah dengan menggunakan display:flex; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    */
+}
+
+/* ----------------------------------------  Navigation  ------------------------------------ */
+
+/* Setting display:block agar tombol navigasi dapat muncul berurutan */
+nav {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Setting display:inline-block agar div dengan class navlink dapat muncul */
+.navlink {
+    display: inline-block;  /* Setting agar block disusun berurutan secara vertikal */
+    position: relative;     /* Setting position:relative agar dapat mengatur posisi <a> agar dapat rata tengah */
+    float: left;            /* Setting float:left agar tombol navigasi muncul secara berurutan dari kiri */
+    width: 25%;             /* Setting width:25% karena ada 4 tombol navigasi dan dibagi rata */
+    height: 100%;           /* Setting height:100% sesuai asli */
+    text-align: center;     /* Setting text-align:center agar tulisan dalam class navlink rata tengah */
+    cursor: pointer;        /* Setting cursor: pointer agar pada saat diklik cursor berubah menjadi pointer */
+}
+/* Setting agar pada saat cursor diarahkan background color berubah warna */
+.navlink:hover {
+    display: inline-block;
+    position: relative;
+    background-color: tomato;
+}
+
+/* Setting agar tag <a> berada ditengah-tengah div dengan class navlink */
+.navlink a {
+    position: absolute;                 /* Setting agar link <a> berada di middle dengan posisi absolute terhadap class navlink */
+    top: 50%;                           /* Setting agar posisi link atas turun 50% */
+    left: 50%;                          /* Setting agar posisi link kiri turun 50% */
+    transform: translate(-50%, -50%);   /* Setting agar posisi link bawah dan kanan mengikuti settingan diatas */
+    text-decoration: none;              /* Setting agar link tidak menampilkan garis bawah */
+    font-family: "Patua One";
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+/* Setting agar tag <a> berubah warna pada saat di hover/sorot */
+.navlink a:hover {
+    position: absolute;                 /* Setting agar link <a> berada di middle dengan posisi absolute terhadap class navlink */
+    top: 50%;                           /* Setting agar posisi link atas turun 50% */
+    left: 50%;                          /* Setting agar posisi link kiri turun 50% */
+    transform: translate(-50%, -50%);   /* Setting agar posisi link bawah dan kanan mengikuti settingan diatas */
+    text-decoration: none;              /* Setting agar link tidak menampilkan garis bawah */
+    font-family: "Patua One";
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+/* ----------------------------------------  Section  ------------------------------------ */
+
+/* Setting bagian section dengan posisi grid dan turun 60px kebawah karena ada header diatas */
+section {
+   
+}
+
+.welcome-image {
+    display: block;
+    position: relative;
+    background-image: url("./img/welcome.jpeg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    opacity: 0.8;
+}
+
+.welcome-image h1 {
+    display: block;
+    margin: auto;
+    padding-top: 200px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    color: #660000;
+}
+
+.welcome-image input {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    color: white;
+    background-color: #660000;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.menu-bar {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: wheat;
+}
+/* Setting agar tombol navigasi berada di posisi kanan */
+.menu-nav {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* Setting display:inline-block agar div dengan class navlink dapat muncul */
+.menu-navlink {
+    display: inline-block;  /* Setting agar block disusun berurutan secara vertikal */
+    position: relative;     /* Setting position:relative agar dapat mengatur posisi <a> agar dapat rata tengah */
+    float: left;            /* Setting float:left agar tombol navigasi muncul secara berurutan dari kiri */
+    width: 25%;             /* Setting width:25% karena ada 4 tombol navigasi dan dibagi rata */
+    height: 100%;           /* Setting height:100% sesuai asli */
+    text-align: center;     /* Setting text-align:center agar tulisan dalam class navlink rata tengah */
+    cursor: pointer;        /* Setting cursor: pointer agar pada saat diklik cursor berubah menjadi pointer */
+}
+/* Setting agar pada saat cursor diarahkan background color berubah warna */
+.menu-navlink:hover {
+    display: inline-block;
+    position: relative;
+    background-color: tomato;
+}
+/* Setting agar tag <a> berada ditengah-tengah div dengan class navlink */
+.menu-navlink a {
+    position: absolute;                 /* Setting agar link <a> berada di middle dengan posisi absolute terhadap class navlink */
+    top: 50%;                           /* Setting agar posisi link atas turun 50% */
+    left: 50%;                          /* Setting agar posisi link kiri turun 50% */
+    transform: translate(-50%, -50%);   /* Setting agar posisi link bawah dan kanan mengikuti settingan diatas */
+    text-decoration: none;              /* Setting agar link tidak menampilkan garis bawah */
+    font-family: "Patua One";
+    font-weight: bold;
+    font-size: 20px;
+    vertical-align: center;
+    color: black;
+}
+/* Setting agar tag <a> berubah warna pada saat di hover/sorot */
+.menu-navlink a:hover {
+    position: absolute;                 /* Setting agar link <a> berada di middle dengan posisi absolute terhadap class navlink */
+    top: 50%;                           /* Setting agar posisi link atas turun 50% */
+    left: 50%;                          /* Setting agar posisi link kiri turun 50% */
+    transform: translate(-50%, -50%);   /* Setting agar posisi link bawah dan kanan mengikuti settingan diatas */
+    text-decoration: none;              /* Setting agar link tidak menampilkan garis bawah */
+    font-family: "Patua One";
+    font-weight: bold;
+    font-size: 20px;
+    vertical-align: center;
+    color: white;
+}
+
+footer {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+footer h5 {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+}
+
+/* ==========================================CSS untuk About us===========================================*/
+
+
+}
+#about-us {
+    position: relative;
+    padding-top: 100px;
+}
+#about-us div {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+#about-us div hr {
+    width: 40%;
+    margin-bottom: 100px;
+}
+#kop-web h1 h3{
+    position: relative;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    
+
+}
+#about-us div div {
+    display: flex;
+    width: 100%;
+}
+.kita {
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.kita img {
+    width: 70%;
+    margin: auto;
+    border-radius: 5px;
+}
+/* -------------- contact us ----------------- */
+form.contact {
+    margin: 50px;
+}
+
+h1.contact {
+    color: #660000;
+    font-family: Garamond;
+    font-size: 3em;
+    padding-top: 100px;
+    width: 200%;
+    margin-left: 2em;
+}
+
+h2.contact {
+    border-bottom: 0.5px double #660000;
+    color: #660000;
+    font-family: Garamond;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 24px;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    text-align: left;
+    width: 70%;
+    margin-left: 5em;
+
+}
+
+p.contact {
+    color: #660000;
+    line-height: 1.3em;
+    text-align: left;
+    width: 70%;
+    margin-left: 130px;
+}
+
+input.contact [type=text], select, textarea {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input.contact [type=submit] {
+    background-color: #660000;
+    border: none;
+    color: #660000;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 3px;
+    cursor: pointer;
+}
+
+input.contact [type=submit]:hover {
+    background-color: #660000;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 20px;
+    width: 50%;
+    margin-left: 120px;
+    
+}
+
+.image {
+    background-image:
+    url(http://indent.ro/public/images/hero-martin-white.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin: 3em;
+}
+
+.caption {
+    display: block;
+    font-size: 40px;
+    line-height: 15px;
+    margin-left: 4em;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    top: 40%;
+}
