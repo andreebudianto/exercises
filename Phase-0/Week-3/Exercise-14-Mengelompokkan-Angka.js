@@ -1,4 +1,4 @@
-/* Phase 0 Week 3 Exercise 13 */
+/* Phase 0 Week 3 Exercise 14 */
 /* Kelompok Angka */
 
 function mengelompokkanAngka(arr) {
