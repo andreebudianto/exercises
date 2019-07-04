@@ -6,8 +6,9 @@ function groupAnimals(arr) {
     var arrDouble = [];
     // Deklarasi variable arrResult untuk menampung hasil arrDouble
     var arrResult = [];
-    // Create array baru untuk menampung hasil sort array
-    var arrSort = arr.sort();
+    // Create array baru untuk menampung hasil sort array (ambil nilai array dengan menggunakan method slice agar tidak mempengaruhi array awal)
+    var arrSort = arr.slice();
+    arrSort.sort();
     // Deklarasi initial awal sebagai pembanding initial pada perulangan
     var init0 = "";
     var length = arr.length;
