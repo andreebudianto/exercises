@@ -2,27 +2,30 @@
 /* Digit Perkalian Minimum */
 
 function digitPerkalianMinimum(angka) {
-    var digit = 0;
+    // Deklarasi variabel mindigit untuk menampung digit perkalian minimum
+    var mindigit = 0;
+    // Lakukan nested for untuk mendapatkan faktor perkalian yang menghasilkan angka tersebut
     for (var i = 1; i <= angka; i++) {
-        var faktor1 = 0;
-        var faktor2 = 0;
-        var gabung = "";
-        if (angka % i === 0) {
-            faktor1 = i;
-            faktor2 = angka / i;
-            return i;
+        for (var j = 1; j <= angka; j++) {
+            // Jika hasil perkalian i dan j adalah angka
+            if ( (i * j) === angka) {
+                // Ubah faktor perkalian menjadi bentuk string dan digabungkan untuk menghitung jumlah digit perkalian
+                var faktor1 = i.toString();
+                var faktor2 = j.toString();
+                var gabung = faktor1 + faktor2;
+                var digit = gabung.length;
+                // Jika mindigit belum ada nilai maka tampung nilai digit sekarang
+                if (mindigit === 0) {
+                    mindigit = digit;
+                } 
+                // Jika digit sekarang lebih kecil daripada mindigit maka gantikan nilai mindigit dengan digit sekarang
+                else if (mindigit > digit) {
+                    mindigit = digit;
+                }
+            }
         }
     }
-    // for (var j = 0; j < bagi1.length; j++) {
-    //     var jumlah = 0;
-    //     jumlah = bagi1[i].length + bagi2[i].length;
-    //     if (digit === 0) {
-    //         digit = jumlah;
-    //     } else if (digit > jumlah) {
-    //         digit = jumlah;
-    //     }
-    // }
-    // return digit;
+    return mindigit;
 }
 
 console.log(digitPerkalianMinimum(24)); // 2
