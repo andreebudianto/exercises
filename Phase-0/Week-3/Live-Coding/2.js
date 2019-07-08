@@ -33,6 +33,8 @@ if (jenisPakaian === "" || jenisPakaian === undefined) {
    console.log("Silahkan pilih pakaian yang ingin disetrika");
 } else if ( (jenisPakaian === "baju" || jenisPakaian === "celana") && panjangPakaian > 20 ) {
    console.log("Pakaian sudah disetrika dan dilipat, Terima Kasih");
+} else if (panjangPakaian > 20) {
+   console.log("Pakaian akan dilipat, Terima Kasih");
 } else {
    console.log("Pakaian sudah disetrika, Terima Kasih");
 }
