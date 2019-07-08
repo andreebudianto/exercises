@@ -27,7 +27,7 @@ function dataHandling(array) {
                     break;
                 }
                 case 4 : {
-                    console.log("Hobby: " + array[i][j]);
+                    console.log("Hobi: " + array[i][j]);
                     break;
                 }
             }
