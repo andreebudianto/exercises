@@ -30,10 +30,7 @@ function urutkanAbjad(str) {
         }
     }
     // Deklarasi variabel untuk menggabungkan hasil array karakter yang telah disusun
-    var newstr = "";
-    for (var k = 0; k < arrstr.length; k++) {
-        newstr = newstr + arrstr[k];
-    }
+    var newstr = arrstr.join("");
     return newstr;
 
     // --------- Function Build In ----------
