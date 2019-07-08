@@ -21,6 +21,8 @@ function tentukanDeretAritmatika(arr) {
         }
     }
     return flag;
+
+    
     // --------------- Average Method ---------------
     // var diff = 0;
     // var total = 0;
