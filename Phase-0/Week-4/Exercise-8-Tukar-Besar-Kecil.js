@@ -10,28 +10,32 @@ function tukarBesarKecil(kalimat) {
     var newWord = "";
     // Lakukan perulangan untuk mengganti huruf satu per satu dari awal
     var length = kalimat.length;
-    // Pakai nester for agar mengganti setiap huruf yang ada ditambah 1 sesuai dengan master alphabet
+    // Pakai nested for agar mengganti setiap huruf yang ada ditambah 1 sesuai dengan master alphabet
     for (var i = 0; i < length; i++) {
-        var flag = true;
+        // Deklarasi variabel flag untuk menentukan karakter sudah ditemukan atau belum
+        var flag = false;
+        // Lakukan pencarian pada master huruf kecil
         for (var j = 0; j < kecil.length; j++) {
-            // Jika huruf yang ditemukan adalah z (paling akhir) maka set huruf menjadi a (kembali ke awal)
+            // Jika huruf yang ditemukan adalah huruf kecil maka ganti dengan huruf besar
             if (kalimat[i] === kecil[j]) {
                 newWord = newWord + besar[j];
-                flag = false;
+                flag = true;
             }
         }
-        if (flag === true) {
+        // Jika huruf kecil tidak ditemukan maka cari pada master huruf besar
+        if (flag === false) {
             for (var k = 0; k < besar.length; k++) {
-                // Jika huruf yang ditemukan adalah z (paling akhir) maka set huruf menjadi a (kembali ke awal)
+                // Jika huruf yang ditemukan adalah huruf besar maka ganti dengan huruf kecil
                 if (kalimat[i] === besar[k]) {
                     newWord = newWord + kecil[k];
-                    flag = false;
+                    flag = true;
                 }
             }
         }
-        if (flag === true) {
+        // Jika huruf bukan kecil / besar maka tampilkan huruf tersebut
+        if (flag === false) {
             newWord = newWord + kalimat[i];
-            flag = false;
+            flag = true;
         }
     }
     return newWord;
