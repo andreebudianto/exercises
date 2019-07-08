@@ -2,13 +2,19 @@
 /* Mencari Median */
 
 function cariMedian(arr) {
+    // Deklarasi variabel untuk menampung panjang array
     var length = arr.length;
+    // Deklarasi variabel untuk menampung indeks tengah dari array
     var mid = 0;
+    // Deklarasi variabel untuk menampung nilai median dari array
     var median = 0;
+    // Jika panjang array genap maka lakukan perhitungan rata-rata
     if (length % 2 === 0) {
         mid = length / 2;
         median = (arr[mid] + arr[mid-1]) / 2;
-    } else {
+    } 
+    // Jika panjang array ganjil maka set variabel median dengan value indeks mid
+    else {
         mid = Math.floor(length / 2);
         median = arr[mid];
     }
