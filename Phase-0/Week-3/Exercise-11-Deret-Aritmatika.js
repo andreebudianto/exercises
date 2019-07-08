@@ -12,9 +12,10 @@ function tentukanDeretAritmatika(arr) {
     var length = arr.length;
     // Lakukan perulangan untuk mendapatkan selisih berikutnya
     for (var i = 1; i < length-1; i++) {
-        // Reset angka selisih diff2 untuk perbandingan selisih
+        // Reset angka selisih diff2 untuk perbandingan selisih selanjutnya
         diff2 = 0;
         diff2 = parseInt(arr[i+1]) - parseInt(arr[i]);
+        // Jika selisih selanjutnya tidak sama dengan selisih awal maka set flag menjadi false
         if (diff1 !== diff2) {
             flag = false;
         }
