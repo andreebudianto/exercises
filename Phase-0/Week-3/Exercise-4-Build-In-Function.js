@@ -5,7 +5,7 @@ var input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca
 
 function dataHandling2(array) {
     // Fitur Splice
-    array.splice(2, 3, "Provinsi Bandar Lampung", "21/05/1989", "Pria", "SMA Internatsiional Metro");
+    array.splice(1, 4, "Roman Alamsyah Elsharawy", "Provinsi Bandar Lampung", "21/05/1989", "Pria", "SMA Internatsiional Metro");
     console.log(array);
 
     // Fitur Split
@@ -60,19 +60,18 @@ function dataHandling2(array) {
             break;
         }
         default : {
-            console.log("Invalid Month!");
+            console.log("Bulan yang dimasukkan salah!");
             break;
         }
     }
 
-    // Fitur Join
-    var tglLahirJoin = tglLahir.join("-");
-    
     // Fitur Sort
-    var tglLahirSort = tglLahir.sort(function(value1, value2) { return value2 - value1 });
+    var tglLahirSort = tglLahir.slice();
+    tglLahirSort.sort(function(value1, value2) { return value2 - value1 });
     console.log(tglLahirSort);
 
     // Fitur Join
+    var tglLahirJoin = tglLahir.join("-");
     console.log(tglLahirJoin);
 
     // Fitur Slice
