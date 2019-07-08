@@ -32,11 +32,10 @@ function targetTerdekat(arr) {
                 // Jika variable shortest masih nol maka masukkan nilai diff
                 if (shortest === 0) {
                     shortest = diff;
-                } else {
-                    // Apabila tidak nol maka lakukan perbandingan dengan diff jika diff lebih kecil maka jadikan sebagai char shortest
-                    if (shortest > diff) {
-                        shortest = diff;
-                    }
+                } 
+                // Apabila tidak nol maka lakukan perbandingan dengan diff jika diff lebih kecil maka jadikan sebagai char shortest
+                else if (shortest > diff) {
+                    shortest = diff;
                 }
             }
         }
