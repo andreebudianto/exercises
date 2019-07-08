@@ -5,7 +5,7 @@ var input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca
 
 function dataHandling2(array) {
     // Fitur Splice
-    array.splice(1, 4, "Roman Alamsyah Elsharawy", "Provinsi Bandar Lampung", "21/05/1989", "Pria", "SMA Internatsiional Metro");
+    array.splice(1, 4, "Roman Alamsyah Elsharawy", "Provinsi Bandar Lampung", "21/05/1989", "Pria", "SMA Internasional Metro");
     console.log(array);
 
     // Fitur Split
@@ -75,8 +75,7 @@ function dataHandling2(array) {
     console.log(tglLahirJoin);
 
     // Fitur Slice
-    var nama = array[1].toString();
-    nama.slice(0, 15);
+    var nama = array[1].slice(0, 15);
     console.log(nama);
 }
 
