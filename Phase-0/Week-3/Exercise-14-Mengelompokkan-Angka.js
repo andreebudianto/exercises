@@ -10,22 +10,17 @@ function mengelompokkanAngka(arr) {
     // Lakukan perulangan untuk mengecek angka pada input array
     var length = arr.length;
     for (var i = 0; i < length; i++) {
+        // Apabila angka tersebut habis dibagi 3 maka masukkan ke dalam array kelipatan 3
+        if ( (arr[i] % 3) === 0 ) {
+            arrThird.push(arr[i]);
+        } 
         // Jika data habis dibagi 2 maka masukkan ke array genap
-        if ( (arr[i] % 2) === 0 ) {
-            // Apabila angka tersebut habis dibagi 3 maka masukkan ke dalam array kelipatan 3
-            if ( (arr[i] % 3) === 0 ) {
-                arrThird.push(arr[i]);
-            } else {
-                arrEven.push(arr[i]);
-            }
-        } else {
-            // Jika data tidak habis dibagi 2 maka masukkan ke array ganjil
-            // Apabila angka tersebut habis dibagi 3 maka masukkan ke dalam array kelipatan 3
-            if ( (arr[i] % 3) === 0 ) {
-                arrThird.push(arr[i]);
-            } else {
-                arrOdd.push(arr[i]);
-            }
+        else if ( (arr[i] % 2) === 0 ) {
+            arrEven.push(arr[i]);
+        } 
+        // Jika data tidak habis dibagi 2 maupun 3 maka masukkan ke array ganjil
+        else {
+            arrOdd.push(arr[i]);
         }
     }
     // Masukkan ketiga array ke dalam array result
