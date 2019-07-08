@@ -21,29 +21,27 @@ function checkAB(str) {
         // Jika ada a atau b maka lakukan perulangan untuk mencari selisih index char a dan b
         var alength = chara.length;
         var blength = charb.length;
-        // Deklarasi variabel further untuk menampung jarak paling jauh
-        var further = 0;
+        // Deklarasi variabel arrdiff untuk menampung semua selisih index
+        var arrdiff = [];
         for (var a = 0; a < alength; a++) {
             for (var b = 0; b < blength; b++) {
-                // Deklarasi variable diff untuk menampung selisih index char a dan b
+                // Deklarasi variable diff untuk menampung sementara selisih index char a dan b
                 var diff = 0;
                 // Gunakan fitur absolute untuk mencari selisih jarak
                 diff = Math.abs(chara[a] - charb[b]);
-                // Jika variable further masih nol maka masukkan nilai diff
-                if (further === 0) {
-                    further = diff;
-                } 
-                // Apabila tidak nol maka lakukan perbandingan dengan diff jika diff lebih kecil maka jadikan sebagai char shortest
-                else if (further < diff) {
-                    further = diff;
-                }
+                // Masukkan hasil diff ke dalam variabel array diff
+                arrdiff.push(diff);
             }
         }
-        if (further < 3) {
-            return false;
-        } else {
-            return true;
+        // Set flag untuk menentukan apakah ada ditemukan jarak minimal 3 karakter
+        var flag = false;
+        for (var j = 0; j < arrdiff.length; j++) {
+            // Jika ditemukan setidaknya satu kali saja jarak minimal 3 karakter maka set flag menjadi true
+            if (arrdiff[j] === 4) {
+                flag = true;
+            }
         }
+        return flag;
     }
 }
 
