@@ -36,7 +36,7 @@ function deepSum (arr) {
     }
 }
 
-//TEST CASE
+
 console.log(deepSum([
 [
     [4, 5, 6],
