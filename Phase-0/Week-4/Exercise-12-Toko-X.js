@@ -1,5 +1,6 @@
 /* Phase 0 Week 4 Exercise 12 */
 /* Toko X */
+
 function countProfit(shoppers) {
     // Daftar master barang sale
     let listBarang = [ ['Sepatu Stacattu', 1500000, 10],
