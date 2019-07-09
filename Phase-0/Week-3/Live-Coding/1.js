@@ -35,5 +35,5 @@
 // 7. Check the amount of money if the amount of money below 300000 then the person will go home.
 // 8. Otherwise, if the amount of money below 700000 then the person will buy "Regular Ticket", set the "seat" variable value to "Reguler" and calculate "money" minus by 300000 and store the calculation result to variable "exchange".
 // 9. Otherwise, if the amount of money below 1000000 then the person will buy "VIP Ticket", set the "seat" variable value to "VIP" and calculate "money" minus by 700000 and store the calculation result to variable "exchange".
-// 10. Otherwise, if the amount of money above 1000000 then the person will buy "VVIP Ticket", set the "seat" variable value to "VVIP" and calculate "money" minus by 1000000 and store the calculation result to variable "exchange".
+// 10. Otherwise, if the amount of money above or equals to 1000000 then the person will buy "VVIP Ticket", set the "seat" variable value to "VVIP" and calculate "money" minus by 1000000 and store the calculation result to variable "exchange".
 // 11. Then if the person has bought the ticket then display to the screen the value of each variable combined with this format ("name"-"seat" dan "exchange").
