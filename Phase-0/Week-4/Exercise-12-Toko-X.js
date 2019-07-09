@@ -1,32 +1,49 @@
 /* Phase 0 Week 4 Exercise 12 */
 /* Toko X */
 function countProfit(shoppers) {
+    // Daftar master barang sale
     let listBarang = [ ['Sepatu Stacattu', 1500000, 10],
                        ['Baju Zoro', 500000, 2],
                        ['Sweater Uniklooh', 175000, 1]
                      ];
-    var profit = {
-        product: "",
-        shoppers: [],
-        leftOver: 0,
-        totalProfit: 0
-    };
+    // Deklarasi variabel array untuk menampung setiap hasil profit masing-masing barang
     var arrResult = [];
+    // Cari panjang array shopper dan array master barang
     var length = shoppers.length;
     var lengthBarang = listBarang.length;
+    // Jika array shopper tidak kosong maka lakukan perhitungan
     if (length > 0) {
-        for (var i = 0; i < length; i++) {
-            for (var j = 0; j < lengthBarang; j++) {
-                profit.product = 
-                if (shoppers[i].product === listBarang[j][0]) {
-
+        // Lakukan perulangan untuk setiap produk pada master barang
+        for (var i = 0; i < lengthBarang; i++) {
+            // Reset variabel object profit untuk menampung setiap barang belanjaan yang ditemukan
+            var profit = {
+                product: "",
+                shoppers: [],
+                leftOver: 0,
+                totalProfit: 0
+            };
+            profit.product = listBarang[i][0];
+            // Cek pada array shopper apakah ada ditemukan barang 
+            for (var j = 0; j < length; j++) {
+                // Jika ditemukan maka cek apakah jumlah barang yang ingin dibeli mencukupi
+                if (shoppers[j].product === listBarang[i][0]) {
+                    // Jika jumlah barang mencukupi maka tambahkan nama shopper ke dalam object profit dan hitung sisa barang serta total profit
+                    if (shoppers[j].amount <= listBarang[i][2]) {
+                        profit.shoppers.push(shoppers[j].name);
+                        listBarang[i][2] = listBarang[i][2] - shoppers[j].amount;
+                        profit.totalProfit = profit.totalProfit + ( shoppers[j].amount * listBarang[i][1] );
+                    }
                 }
             }
+            // Set jumlah barang tersisa adalah jumlah barang terakhir setelah dikurang
+            profit.leftOver = listBarang[i][2];
+            // Masukkan hasil object profit yang telah diproses
+            arrResult.push(profit);
         }
-    } else {
-        return arrResult;
-    }
+    } 
+    return arrResult;
 }
+
 
 console.log(countProfit([{name: 'Windi', product: 'Sepatu Stacattu', amount: 2}, {name: 'Vanessa', product: 'Sepatu Stacattu', amount: 3}, {name: 'Rani', product: 'Sweater Uniklooh', amount: 2}]));
 //[ { product: 'Sepatu Stacattu',
