@@ -10,19 +10,19 @@ function groupAnimals(arr) {
     var arrSort = arr.slice();
     arrSort.sort();
     // Deklarasi initial awal sebagai pembanding initial pada perulangan
-    var init0 = "";
+    var initAwal = "";
     var length = arr.length;
     // Lakukan perulangan untuk setiap data dalam array yang sudah di sort
     for (var i = 0; i < length; i++) {
         // Ambil initial pertama setiap data
-        var init1 = arrSort[i].substr(0,1);
+        var initSort = arrSort[i].substr(0,1);
         // Bandingkan apabila initial tidak sama dengan initial sebelumnya maka lakukan proses push
-        if (init0 !== init1) {
+        if (initAwal !== initSort) {
             // Lakukan perulangan untuk mencari data yang memiliki initial yang sama
             for (var j = 0; j < length; j++) {
-                var init2 = arr[j].substr(0,1);
+                var initArray = arr[j].substr(0,1);
                 // Jika ditemukan initial yang sama maka push data ke arrDouble
-                if (init1 === init2) {
+                if (initSort === initArray) {
                     arrDouble.push(arr[j]);
                 }
             }
@@ -31,7 +31,7 @@ function groupAnimals(arr) {
             // Kosongkan arrDouble agar dapat diisi dengan data baru
             arrDouble = [];
             // Ganti initial sebelumnya untuk mengecek initial berikutnya
-            init0 = init1;
+            initAwal = initSort;
         }
     }
     return arrResult;
