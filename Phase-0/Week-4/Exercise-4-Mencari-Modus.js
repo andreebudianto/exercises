@@ -20,13 +20,8 @@ function cariModus(arr) {
                 counter++;
             }
         }
-        // Apabila sudah selesai mencari selanjutnya menentukan nilai modus
-        // Jika isi dari array semua nilai yang sama maka set modus = -1
-        if (counter === length) {
-            modus = -1;
-        } 
         // Jika nilai counter lebih besar daripada most saat ini maka gantikan most dengan counter dan set modus dengan char saat ini
-        else if (counter > most) {
+        if (counter > most) {
             most = counter;
             modus = arr[i];
         }
