@@ -5,7 +5,27 @@ function countProfit(shoppers) {
                        ['Baju Zoro', 500000, 2],
                        ['Sweater Uniklooh', 175000, 1]
                      ];
+    var profit = {
+        product: "",
+        shoppers: [],
+        leftOver: 0,
+        totalProfit: 0
+    };
+    var arrResult = [];
+    var length = shoppers.length;
+    var lengthBarang = listBarang.length;
+    if (length > 0) {
+        for (var i = 0; i < length; i++) {
+            for (var j = 0; j < lengthBarang; j++) {
+                profit.product = 
+                if (shoppers[i].product === listBarang[j][0]) {
 
+                }
+            }
+        }
+    } else {
+        return arrResult;
+    }
 }
 
 console.log(countProfit([{name: 'Windi', product: 'Sepatu Stacattu', amount: 2}, {name: 'Vanessa', product: 'Sepatu Stacattu', amount: 3}, {name: 'Rani', product: 'Sweater Uniklooh', amount: 2}]));
