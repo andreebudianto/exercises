@@ -2,7 +2,38 @@
 /* Deep Sum */
 
 function deepSum (arr) {
-
+    // Pertama cari panjang array utama
+    var arrLength = arr.length;
+    // Jika ditemukan data maka mulai perhitungan
+    if (arrLength > 0) {
+        // Deklarasi variabel result untuk menampung total penjumlahan semua
+        var result = 0;
+        // Lakukan perulangan sebanyak panjang array
+        for (var i = 0; i < arrLength; i++) {
+            // Reset penjumlahan untuk array dimensi 1
+            var firstsum = 0;
+            // Cari panjang array dimensi 1 untuk dilakukan perulangan mencari nilai sum dimensi 2
+            var firstArrLength = arr[i].length;
+            for (var j = 0; j < firstArrLength; j++) {
+                // Reset penjumlahan untuk array dimensi 2
+                var secondsum = 0;
+                // Lakukan perulangan sebanyak jumlah data yang ada pada array dimensi 2
+                var secondArrLength = arr[i][j].length;
+                for (var k = 0; k < secondArrLength; k++) {
+                    secondsum = secondsum + arr[i][j][k];
+                }
+                // Masukkan nilai penjumlahan array dimensi 2 agar dapat dikalkulasi lagi untuk array dimensi 1
+                firstsum = firstsum + secondsum;
+            }
+            // Masukkan total nilai penjumlahan yang ada pada dimensi 1 dan 2
+            result = result + firstsum;
+        }
+        return result;
+    } 
+    // Jika tidak ditemukan maka tampilkan pesan error
+    else {
+        return "No number";
+    }
 }
 
 //TEST CASE
