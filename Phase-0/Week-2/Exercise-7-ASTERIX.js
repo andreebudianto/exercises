@@ -19,7 +19,7 @@ for (var i = 0; i < rows2; i++) {
 
 /* 3. Sorting Flooring Asterisk Line with Nested Looping */
 var rows3 = 5;
-for (var i = 0; i < rows2; i++) {
+for (var i = 0; i < rows3; i++) {
     var asterisk = "";
     for (var j = 0; j <= i; j++) {
         asterisk = asterisk + "*";
