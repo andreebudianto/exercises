@@ -12,20 +12,22 @@ function graduates (students) {
         classes = students[i].class;
         // Pertama-tama harus cek apakah nilai nya diatas 75
         if (students[i].score > 75) {
-            // Jika data awal maka set nama dan score tertinggi dengan data saat ini
+            // Jika belum ada key dengan class saat ini maka create key baru dalam bentuk array dan object
             if (resultObj[classes] === undefined) {
                 resultObj[classes] = [{
                     name: students[i].name,
                     score: students[i].score
                 }];
-            } else {
+            } 
+            // Jika key dengan class saat ini sudah ada maka lakukan push array
+            else {
                 resultObj[classes].push({
                     name: students[i].name,
                     score: students[i].score
                 });
             }
         } 
-        // Jika tidak ditemukan maka cukup print key class nya dengan nilai array kosong
+        // Jika tidak ditemukan student yang lulus maka cukup print key class nya dengan nilai array kosong
         else {
             if (resultObj[classes] === undefined) {
                 resultObj[classes] = [{}];
