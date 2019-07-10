@@ -2,31 +2,60 @@
 /* Most Frequent Largest Numbers */
 
 function sorting(arrNumber) {
-    // Buat array baru untuk menampung array yang akan disort
+    // Buat array baru untuk disort
     var array = [];
+    // Buat flag untuk penanda kapan harus dilakukan rekursif
+    var flag = false;
+    // Lakukan perulangan untuk mengcopy isi dalam arrNumber
     var length = arrNumber.length;
-    // Lakukan perulangan untuk mengcopy setiap value pada arrNumber kedalam array baru
     for (var i = 0; i < length; i++) {
         array.push(arrNumber[i]);
     }
-    // Lakukan perulangan untuk mengurutkan nilai dalam array
-    var swap = true;
-    while (swap) {
-        // Set kondisi swap menjadi false agar apabila sudah selesai di sort bisa keluar dari loop
-        swap = false;
-        // Cek setiap angka dalam array apakah sudah berurutan atau belum
-        for (var i = 0; i < length - 1; i++) {
-            // Jika masih ditemukan angka yang belum berurutan maka tukar nilai tersebut dan hidupkan flag swap agar bisa dilakukan perulangan lagi
-            if (array[i] > array[i+1]) {
-                // Tukar nilai array indeks sekarang dengan indeks berikutnya dengan bantuan variabel temp
-                var temp = array[i];
-                array[i] = array[i+1];
-                array[i+1] = temp;
-                swap = true;
-            }
+    // Lakukan perulangan untuk mengecek setiap value sudah berurut atau belum
+    for (var i = 0; i < length - 1; i++) {
+        // Jika ditemukan angka yang tidak berurut maka lakukan swap dan aktifkan flag rekursif
+        if (array[i] > array[i+1]) {
+            var temp = array[i];
+            array[i] = array[i+1];
+            array[i+1] = temp;
+            flag = true;
         }
     }
-    return array;
+    // Jika flag true maka lakukan rekursif
+    if (flag === true) {
+        return sorting(array);
+    } 
+    // Jika tidak maka tampilkan array
+    else {
+        return array;
+    }
+
+    // ---------------------- Method While ------------------------
+    // // Buat array baru untuk menampung array yang akan disort
+    // var array = [];
+    // var length = arrNumber.length;
+    // // Lakukan perulangan untuk mengcopy setiap value pada arrNumber kedalam array baru
+    // for (var i = 0; i < length; i++) {
+    //     array.push(arrNumber[i]);
+    // }
+    // // Lakukan perulangan untuk mengurutkan nilai dalam array
+    // var swap = true;
+    // while (swap) {
+    //     // Set kondisi swap menjadi false agar apabila sudah selesai di sort bisa keluar dari loop
+    //     swap = false;
+    //     // Cek setiap angka dalam array apakah sudah berurutan atau belum
+    //     for (var i = 0; i < length - 1; i++) {
+    //         // Jika masih ditemukan angka yang belum berurutan maka tukar nilai tersebut dan hidupkan flag swap agar bisa dilakukan perulangan lagi
+    //         if (array[i] > array[i+1]) {
+    //             // Tukar nilai array indeks sekarang dengan indeks berikutnya dengan bantuan variabel temp
+    //             var temp = array[i];
+    //             array[i] = array[i+1];
+    //             array[i+1] = temp;
+    //             swap = true;
+    //         }
+    //     }
+    // }
+    // return array;
 }
 
 function getTotal(arrNumber) {
