@@ -2,10 +2,10 @@
 /* Total Digit Rekursif */
 
 function totalDigitRekursif(angka) {
+    // Pertama-tama harus ubah dulu format angka menjadi string agar dapat dipotong
+    var str = angka.toString();
     // Selama angka diatas nol maka lakukan proses rekursif
-    if (angka > 0) {
-        // Pertama-tama harus ubah dulu format angka menjadi string agar dapat dipotong
-        var str = angka.toString();
+    if (str.length > 1) {
         // Ambil digit pertama dan konversi ke dalam bentuk angka untuk ditambahkan pada hasil akhir
         var angkaAwal = parseInt(str[0]);
         // Ambil sisa digit angka setelahnya untuk dapat dijadikan parameter rekursif berikutnya
@@ -15,7 +15,7 @@ function totalDigitRekursif(angka) {
     }
     // Jika sudah tidak ada angka lagi maka stop rekursif
     else {
-        return 0;
+        return angka;
     }
     // --------------- Method Split Array ---------------
     // if (angka > 0) {
