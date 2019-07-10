@@ -7,11 +7,9 @@ function totalDigitRekursif(angka) {
         // Pertama-tama harus ubah dulu format angka menjadi string agar dapat dipotong
         var str = angka.toString();
         // Ambil digit pertama dan konversi ke dalam bentuk angka untuk ditambahkan pada hasil akhir
-        var strAwal = str.slice(0,1);
-        var angkaAwal = parseInt(strAwal);
+        var angkaAwal = parseInt(str[0]);
         // Ambil sisa digit angka setelahnya untuk dapat dijadikan parameter rekursif berikutnya
-        var strAkhir = str.slice(1);
-        var angkaAkhir = parseInt(strAkhir);
+        var angkaAkhir = parseInt(str.slice(1));
         // Hitung total digit angka pertama
         return angkaAwal + totalDigitRekursif(angkaAkhir);
     }
