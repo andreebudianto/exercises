@@ -2,35 +2,6 @@
 
 Selamat datang di tahap persiapan sesungguhnya bootcamp Hacktiv8, yaitu Phase 0! Phase 0 ini merupakan pembelajaran yang bersifat matrikulasi atau kalibrasi yang lebih intens. Phase 0 juga menjadi penentu apakah kamu dapat maju ke Phase 1. Kita harap bersama agar kamu antusias untuk meningkatkan pengetahuan dasarmu!
 
-**Bagaimana Phase 0 ini akan berjalan?**
-
-Dalam tahap ini, tiap pekan bisa diselesaikan dalam waktu paling cepat 20-30 jam. Pun kalau kamu sudah bisa berbagai skill yang sudah tertera, bisa saja juga ada beberapa hal esensial dan tambahan yang belum kamu tahu. Tiap akhir pekan, kamu harus mengisi form laporan kegiatan yang link-nya disertakan di bawah.
-
-**Oke, siap untuk memulai Phase 0 kita di Hacktiv8?**
-
-Kami yakin bahwa kamu akan mengalami petualangan yang sangat seru! Pada waktu di antara berakhirnya Phase 0 dan sebelum dimulainya Phase 1 juga, kita akan melakukan evaluasi terhadap ilmu yang telah kamu dapatkan.
-
-**Apa saja yang akan kita lakukan, pahami, dan selesaikan dalam beberapa hari ke depan?**
-
-Berikut berbagai modul kegiatan inti yang dapat kamu lihat, baca, tonton, lakukan, dan sebagainya. Ikuti tiap checklist yang bisa kamu lakukan. Jika ada yang belum selesai, boleh saja ditunda ke hari berikutnya. Yang penting secara pribadi dalam sepekan kamu harus bisa menyelesaikan semuanya.
-
-Catatan: Untuk seluruh diskusi pembelajaran inti dari awal persiapan hingga berakhirnya bootcamp, kita akan menggunakan grup [Slack](https://slack.com/).
-
-Panduan:
-- :notebook_with_decorative_cover: **Reference** adalah bacaan sebagai referensi pembelajaran kamu. Di dalam beberapa bacaan, ada direction yang memintamu membuat sesuatu. Direction itu lebih bersifat opsional untuk membantu kamu saja.
-- :anchor: **Anchor** adalah tugas atau tantangan yang wajib kamu kerjakan dan kumpulkan.
-- 💪 **Self Training** adalah tugas atau tantangan opsional yang walaupun tidak dikumpulkan, bila kamu selesaikan dengan baik, pembelajarannya maksimal! 😎
-- :rocket: **Rocket** adalah tantangan opsional yang menguji kehebatanmu sebagai calon developer masa depan
-- :books: **Optional Reference** adalah bacaan sebagai referensi tambahan yang akan memperkaya pengetahuanmu
-
-**HACKTIV8 FoxHub, Platform Pengumpulan Tugas**
-
-- [FoxHub Guide](https://github.com/hacktiv8/phase-0-activities/blob/master/modules/fox-hub-guide.md)
-
-**Pengumpulan Tugas dan Sistem Feedback**
-
-Tugas mingguan dikumpulkan harian, dan setiap tugas akan dikoreksi setiap pagi di hari selanjutnya. Namun, untuk deadline sendiri, kami memperbolehkan tugas agar dikumpulkan di akhir minggu di hari minggu. Kami merekomendasikan untuk mengumpulkan tugas dalam bentuk harian, karena akan mempercepat tim instruktur untuk mengkoreksi dan memberikan feedback. Gunakan Platform HACKTIV8 FoxHub untuk melakukan pengumpulan tugas.
-
 ## Senin - Hari Pertamamu di HACKTIV8 Phase 0
 Hari pertamamu akan dimulai dengan memperkenalkan dirimu kepada teman-teman lainnya di Slack Group, dan
 mempelajari hal paling pertama dalam pembuatan sebuah web, yaitu HTML! Mungkin banyak dari antara kamu
@@ -99,20 +70,3 @@ Tugas :
 -  [Blogging teknikal terkait skill pekan ini](https://github.com/hacktiv8/phase-0-activities/blob/master/modules/blog.md)
 
 Selamat memulai petualanganmu yang lebih nyata dari sebelumnya! Jika ada hal yang perlu ditanyakan, langsung saja berdiskusi di grup ya.
-
-=======
-# HACKTIV8 Phase 0 Activities
-
-Phase 0 adalah aktivitas yang mempersiapkan murid untuk mampu memahami dan masuk ke dalam Phase 1 Program
-Full-Stack JavaScript Development Course di HACKTIV8. Repositori ini digunakan sebagai acuan untuk pembelajaran dan bersifat wajib untuk dipelajari dan dikerjakan untuk berkesempatan melanjutkan ke dalam Phase 1.
-
-Materi di bagi ke dalam enam minggu, yang tiap minggu nya terdiri dari berbagai fokus materi. Kebanyakan dari
-materi dan tantangan yang tertera pada repositori ini hanya dapat di akses oleh murid yang sedang aktif di dalam phase 0 batch program.
-
-### [Week 1: Membuat Website Pertama Saya](https://github.com/edirates/exercises/tree/master/Phase-0/Week-1/README.md)
-### [Week 2: Mengenal JavaScript](https://github.com/edirates/exercises/tree/master/Phase-0/Week-2/README.md)
-### [Week 3: Mendalami JavaScript](https://github.com/edirates/exercises/tree/master/Phase-0/Week-3/README.md)
-### [Week 4: Bermain Logic di JavaScript](https://github.com/edirates/exercises/tree/master/Phase-0/Week-4/README.md)
-### [Week 5: Bermain Logic di JavaScript](https://github.com/edirates/exercises/tree/master/Phase-0/Week-5/README.md)
-### [Week 6: Menguasai JavaScript ES6 dan Paradigma Programming](https://github.com/edirates/exercises/tree/master/Phase-0/Week-6/README.md)
->>>>>>> ecea1a57d549e3243125fa461dc1626e99bf2d7b
