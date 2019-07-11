@@ -26,3 +26,55 @@ for (var i = 0; i < rows3; i++) {
     }
     console.log(asterisk);
 }
+
+/* 4. Sorting Flooring Asterisk Line with Nested Looping and IF*/
+var rows4 = 5;
+for (var i = rows4; i > 0; i--) {
+    var asterisk = "";
+    for (var j = 0; j < rows4; j++) {
+        if ( i-1 > j ) {
+            asterisk = asterisk + " ";
+        } else {
+            asterisk = asterisk + "*";
+        }
+    }
+    console.log(asterisk);
+}
+
+/* 5. Sorting Flooring Asterisk Line with Nested Looping and IF*/
+var rows5 = 5;
+for (var i = rows5; i > 0; i--) {
+    var asterisk = "";
+    for (var j = 0; j < rows5; j++) {
+        if ( i-1 > j ) {
+            asterisk = asterisk + " ";
+        } else {
+            asterisk = asterisk + "*";
+        }
+    }
+    for (var k = 0; k < rows5-i; k++) {
+        asterisk = asterisk + "*";
+    }
+    console.log(asterisk);
+}
+
+/* 6. Sorting Flooring Asterisk Line with Nested Looping and IF*/
+var rows6 = 5;
+for (var i = 0; i < rows6; i++) {
+    var asterisk = "";
+    for (var j = 0; j < rows6; j++) {
+        if ( i <= j ) {
+            asterisk = asterisk + "*";
+        } else {
+            asterisk = asterisk + " ";
+        }
+    }
+    for (var k = rows6-1; k > i; k--) {
+        if ( k > i ) {
+            asterisk = asterisk + "*";
+        } else {
+            asterisk = asterisk + " ";
+        }
+    }
+    console.log(asterisk);
+}
