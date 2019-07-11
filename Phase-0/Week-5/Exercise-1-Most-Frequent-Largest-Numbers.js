@@ -1,4 +1,4 @@
-/* Phase 0 Week 5 Exercise 13 */
+/* Phase 0 Week 5 Exercise 1 */
 /* Most Frequent Largest Numbers */
 
 function sorting(arrNumber) {

@@ -1,4 +1,4 @@
-/* Phase 0 Week 5 Exercise 14 */
+/* Phase 0 Week 5 Exercise 2 */
 /* Password Generator */
 
 function changeVocals (str) {

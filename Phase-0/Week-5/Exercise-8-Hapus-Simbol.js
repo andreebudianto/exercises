@@ -1,4 +1,4 @@
-/* Phase 0 Week 5 Exercise 7 */
+/* Phase 0 Week 5 Exercise 8 */
 /* Hapus Simbol */
 
 function hapusSimbol(str) {

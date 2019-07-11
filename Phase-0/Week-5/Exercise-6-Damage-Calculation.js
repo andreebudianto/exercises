@@ -1,4 +1,4 @@
-/* Phase 0 Week 5 Exercise 5 */
+/* Phase 0 Week 5 Exercise 6 */
 /* Damage Calculation */
 
 function attack (damage) {

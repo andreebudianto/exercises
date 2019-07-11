@@ -1,4 +1,4 @@
-/* Phase 0 Week 5 Exercise 16 */
+/* Phase 0 Week 5 Exercise 4 */
 /* Total Digit Rekursif */
 
 function totalDigitRekursif(angka) {

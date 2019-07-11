@@ -1,4 +1,4 @@
-/* Phase 0 Week 5 Exercise 15 */
+/* Phase 0 Week 5 Exercise 3 */
 /* Makan Terus Rekursif */
 
 function makanTerusRekursif(waktu) {

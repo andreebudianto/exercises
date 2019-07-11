@@ -1,4 +1,4 @@
-/* Phase 0 Week 5 Exercise 17 */
+/* Phase 0 Week 5 Exercise 5 */
 /* Kali Terus Rekursif */
 
 function kaliTerusRekursif(angka) {
