@@ -19,7 +19,7 @@ Tugas :
 - :anchor:
 [[**Exercises 1**] Codecademy Course - HTML](https://www.codecademy.com/learn/learn-html)
 - 💪
-[[**Latihan Pribadi 1**] Membuat Halaman HTML Sederhana](modules/anchor-laman-web-pertamaku.md)
+[[**Latihan Pribadi 1**] Membuat Halaman HTML Sederhana](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/anchor-laman-web-pertamaku.md)
 
 ## Selasa - Menguasai HTML dan Mengenal CSS
 Di hari pertama kamu telah berhasil membuat website pertamamu dengan memanfaatkan beberapa tag sederhana di HTML. Hari ini, mari kita percantik tampilan websitemu dengan Cascading Style Sheet, atau disingkat menjadi CSS. Akan sangat menyenangkan pada saat kita bisa mulai membuat website kita lebih menarik!
@@ -30,8 +30,8 @@ Materi & Referensi :
 
 Tugas :
 - :anchor: [[**Exercises 2**] Codecademy Course - CSS (hanya sampai Unit 5 - Typography)](https://www.codecademy.com/learn/learn-css)
-- 💪 [[**Latihan Pribadi 2**] Menghias HTML dengan CSS](modules/anchor-css-selector-and-styling.md)
-- 💪 [[**Latihan Pribadi 3**] Membuat Layout dan Desain Halaman Web dengan CSS](modules/anchor-css-layouting.md)
+- 💪 [[**Latihan Pribadi 2**] Menghias HTML dengan CSS](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/anchor-css-selector-and-styling.md)
+- 💪 [[**Latihan Pribadi 3**] Membuat Layout dan Desain Halaman Web dengan CSS](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/anchor-css-layouting.md)
 
 ## Rabu dan Kamis - Mengendalikan Revisi Menggunakan Git
 Kamu telah mampu membuat website yang cukup menarik dengan ilmu yang telah kamu pelajari. Sekarang saatnya
