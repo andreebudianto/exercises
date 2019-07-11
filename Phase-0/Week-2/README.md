@@ -8,12 +8,12 @@ Hari pertama di Week 2! Mulailah pekan baru dengan semangat baru! Hari ini, kamu
 
 Materi & Referensi :
 - :notebook_with_decorative_cover:
-[Mempelajari struktur alur program dengan algoritma dan pseudocode](modules/algorithm-pseudocode.md)
+[Mempelajari struktur alur program dengan algoritma dan pseudocode](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/algorithm-pseudocode.md)
 
 Tugas :
 
 - :anchor:
-[[**Exercises 1**] Berlatih dengan Pseudocode](modules/challenge-main-pseudocode.md)
+[[**Exercises 1**] Berlatih dengan Pseudocode](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/challenge-main-pseudocode.md)
 
 ## Selasa - Dunia JavaScript
 
@@ -24,22 +24,22 @@ Materi & Referensi :
 - :wrench:
 [Repl, tools online untuk menjalankan JavaScript](https://repl.it/languages/javascript)
 - :notebook_with_decorative_cover:
-[Memahami dan menggunakan dasar pemrograman dengan JavaScript](modules/js-first-time.md)
+[Memahami dan menggunakan dasar pemrograman dengan JavaScript](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/js-first-time.md)
 - :notebook_with_decorative_cover:
-[Memahami Tipe Data dan Variabel pada JavaScript](modules/js-first-time.md#data-type)
+[Memahami Tipe Data dan Variabel pada JavaScript](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/js-first-time.md#data-type)
 - :notebook_with_decorative_cover:
-[Mengenal Berbagai Jenis Operasi dalam JavaScript](modules/js-first-time.md#operator)
+[Mengenal Berbagai Jenis Operasi dalam JavaScript](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/js-first-time.md#operator)
 - :notebook_with_decorative_cover:
-[Memahami Control Flow: Conditional dan Branching](modules/js-first-time.md#conditional)
+[Memahami Control Flow: Conditional dan Branching](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/js-first-time.md#conditional)
 
 Tugas :
 
 - :anchor:
 [[**Exercises 2**] Codecademy JavaScript Building Blocks: Unit 1 and 2 - Intro and Control Flow only](https://www.codecademy.com/learn/learn-javascript)
 - :anchor:
-[[**Exercises 3**] Mengenal penggunaan Conditional `if-else` dalam JavaScript](modules/anchor-menggunakan-if-else.md)
+[[**Exercises 3**] Mengenal penggunaan Conditional `if-else` dalam JavaScript](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/anchor-menggunakan-if-else.md)
 - :anchor:
-[[**Exercises 4**] Mengenal penggunaan Conditional (Switch-Case) dalam JavaScript](modules/anchor-switch-case.md)
+[[**Exercises 4**] Mengenal penggunaan Conditional (Switch-Case) dalam JavaScript](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/anchor-switch-case.md)
 
 ## Rabu - Mengenal Tipe data String dan Konsep Looping atau Perulangan
 
@@ -47,16 +47,16 @@ Hari ini mari kita berkenalan dengan string dan perulangan, atau sering disebut 
 
 Materi & Referensi :
 - :notebook_with_decorative_cover:
-[Memahami Tipe Data String pada JavaScript](modules/js-string-reference.md)
+[Memahami Tipe Data String pada JavaScript](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/js-string-reference.md)
 - :notebook_with_decorative_cover:
-[Memahami Perulangan atau Looping](modules/js-first-time.md#loopiteration)
+[Memahami Perulangan atau Looping](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/js-first-time.md#loopiteration)
 - :notebook_with_decorative_cover:
-[Memahami Built-in Object Math](modules/math-object-js.md)
+[Memahami Built-in Object Math](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/math-object-js.md)
 
 Tugas :
-- :anchor: [[**Exercises 5**] Bermain dengan String di JavaScript](modules/anchor-main-string.md)
-- :anchor: [[**Exercises 6**] Berlatih Perulangan di JavaScript](modules/anchor-main-loop.md)
-- :anchor: [[**Exercises 7**] Perulangan - Play with Asterisks](modules/anchor-main-loop-asterisks.md)
+- :anchor: [[**Exercises 5**] Bermain dengan String di JavaScript](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/anchor-main-string.md)
+- :anchor: [[**Exercises 6**] Berlatih Perulangan di JavaScript](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/anchor-main-loop.md)
+- :anchor: [[**Exercises 7**] Perulangan - Play with Asterisks](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/anchor-main-loop-asterisks.md)
 
 ## Kamis - Menggunakan Konsep Functions
 
@@ -64,29 +64,29 @@ Mulai familiar dengan JavaScript? Good! Saatnya kita masuk ke pembahasan bagaima
 
 Materi & Referensi :
 - :notebook_with_decorative_cover:
-[Mempelajari Function atau Method](modules/js-first-time.md#functionmethod)
+[Mempelajari Function atau Method](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/js-first-time.md#functionmethod)
 - :notebook_with_decorative_cover:
-[Mempelajari Scope](modules/js-scope.md)
+[Mempelajari Scope](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/js-scope.md)
 
 Tugas :
 
 - :anchor:
 [[**Exercises 8**] JavaScript Building Blocks: Codecademy JavaScript Course (Unit 3 - Functions)](https://www.codecademy.com/learn/learn-javascript)
 - :anchor:
-[[**Exercises 9**] Berlatih Penggunaan Functions](modules/anchor-basic-function.md)
+[[**Exercises 9**] Berlatih Penggunaan Functions](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/anchor-basic-function.md)
 
 ## Jumat - Solve Problems menggunakan JavaScript
 
 - :anchor:
-[[**Exercises 10**] Bandingkan Angka](/modules/challenge-bandingkan-angka.md)
+[[**Exercises 10**] Bandingkan Angka](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/challenge-bandingkan-angka.md)
 - :anchor:
-[[**Exercises 11**] Balik Kata](/modules/challenge-balik-kata.md)
+[[**Exercises 11**] Balik Kata](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/challenge-balik-kata.md)
 - :anchor:
-[[**Exercises 12**] Konversi Menit](/modules/challenge-konversi-menit.md)
+[[**Exercises 12**] Konversi Menit](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/challenge-konversi-menit.md)
 - :anchor:
-[[**Exercises 13**] X dan O](/modules/challenge-x-dan-o.md)
+[[**Exercises 13**] X dan O](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/challenge-x-dan-o.md)
 
 ## Sabtu dan Minggu
 
--  [Refleksi kegiatan pekan ini](modules/reflection.md)
--  [Blogging teknikal terkait skill pekan ini](modules/blog.md)
+-  [Refleksi kegiatan pekan ini](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/reflection.md)
+-  [Blogging teknikal terkait skill pekan ini](https://github.com/hacktiv8/phase-0-activities/tree/master/modules/blog.md)
