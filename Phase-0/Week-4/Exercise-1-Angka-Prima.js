@@ -9,7 +9,7 @@ function angkaPrima(angka) {
         if (angka === 2) {
             return true;
         } else {
-            // Lakukan perulangan untuk membagi angka tersebut dengan angka sebelumnya apabila ditemukan faktor pembagi sebelum angka tersebut berarti bukan angka priima
+            // Lakukan perulangan untuk membagi angka tersebut dengan angka sebelumnya apabila ditemukan faktor pembagi sebelum angka tersebut berarti bukan angka prima
             for (var i = 2; i < angka; i++) {
                 if (angka % i === 0) {
                     return false;
