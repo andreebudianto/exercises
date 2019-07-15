@@ -19,9 +19,6 @@ function manualSort(numbers) {
       temp.push(smallest);
       numbers[i].splice(indexSmallest,1);
     } else {
-      if (numbers[i][0] !== undefined) {
-        temp.push(numbers[i][0]);
-      }
       result.push(temp.slice());
       numbers[i].splice(0,1);
       temp = [];
