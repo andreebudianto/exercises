@@ -10,10 +10,10 @@ function countProfit(shoppers) {
     // Deklarasi variabel array untuk menampung setiap hasil profit masing-masing barang
     var arrResult = [];
     // Cari panjang array shopper dan array master barang
-    var length = shoppers.length;
+    var lengthShoppers = shoppers.length;
     var lengthBarang = listBarang.length;
     // Jika array shopper tidak kosong maka lakukan perhitungan
-    if (length > 0) {
+    if (lengthShoppers > 0) {
         // Lakukan perulangan untuk setiap produk pada master barang
         for (var i = 0; i < lengthBarang; i++) {
             // Reset variabel object profit untuk menampung setiap barang belanjaan yang ditemukan
@@ -25,7 +25,7 @@ function countProfit(shoppers) {
             };
             profit.product = listBarang[i][0];
             // Cek pada array shopper apakah ada ditemukan barang 
-            for (var j = 0; j < length; j++) {
+            for (var j = 0; j < lengthShoppers; j++) {
                 // Jika ditemukan maka cek apakah jumlah barang yang ingin dibeli mencukupi
                 if (shoppers[j].product === listBarang[i][0]) {
                     // Jika jumlah barang mencukupi maka tambahkan nama shopper ke dalam object profit dan hitung sisa barang serta total profit
