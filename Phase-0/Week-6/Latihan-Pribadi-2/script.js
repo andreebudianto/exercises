@@ -2,18 +2,27 @@
 var body = document.body;
 
 // Ambil children dari tag body dengan nilai id
-var divContainer = document.getElementById("container");
+var divEldestParent = document.getElementById("eldest-parent");
 
-// Ambil children dari div container dengan nilai id
-var h1Container = document.getElementById("fill-me");
-h1Container.innerHTML = "HALO!";
+// Ambil children dari div eldest parent dengan method children
+var divPertama = divEldestParent.children;
+divPertama[0].innerHTML = "Diakses Melalui Eldest Parent";
 
-// Ambil children dari div container dengan nilai class
-var classParagraph = document.getElementsByClassName("change-all-of-me");
-for (var i = 0; i < classParagraph.length; i++) {
-    classParagraph[i].innerHTML = "HALO JUGA!";
-}
+// Ambil children dari tag body dengan nilai id
+var divAChild = document.getElementById("a-child");
 
-// Ambil children dari div container dengan nilai tag
-var h2Container = document.getElementsByTagName("h2");
-h2Container[0].innerHTML = "Apa Kabar!";
+// Ambil previousSibling dari div achild
+var divPrevSibling = divAChild.previousElementSibling;
+divPrevSibling.innerHTML = "Diakses Melalui a Child";
+
+// Ambil nextSibling dari div achild
+var divNextSibling = divAChild.nextElementSibling;
+divNextSibling.innerHTML = "Diakses Melalui a Child";
+
+// Ambil nextSibling dari div achild
+var divNextSibling = divAChild.nextElementSibling;
+divNextSibling.innerHTML = "Diakses Melalui a Child";
+
+// Ambil parentNode dua kali ke atas dan nextSibling dari div achild
+var divParentNode = divAChild.parentNode.parentNode.nextElementSibling;
+divParentNode.innerHTML = "Diakses Melalui a Child";
